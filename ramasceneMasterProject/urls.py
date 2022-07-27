@@ -14,12 +14,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 import ramasceneMasterProject.views as views
-from django.conf.urls import url, include
+from django.urls import re_path, include
 from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^$', views.homePage, name='homePage'),
-    url(r'^', include('ramascene.urls')),
+    re_path(r'^$', views.homePage, name='homePage'),
+    re_path(r'^', include('ramascene.urls')),
 ]

@@ -1,0 +1,4 @@
+export DJANGO_SETTINGS_MODULE=ramasceneMasterProject.config.dev
+export DATASETS_VERSION=v3.3
+export DATASETS_DIR=/Users/michaelweinold/data/ramascene
+export OPENBLAS_NUM_THREADS=2
